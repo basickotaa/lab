@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content=""> 
+  <meta name="author" content="">
+  <title>King Amda Rest Api</title> 
+  <link rel="shortcut icon" href="./img/logo/KA Only Black.png">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/ruang-admin.min.css" rel="stylesheet">     
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Cairo&family=Caveat&family=Exo+2:wght@500&family=Rancho&family=Russo+One&family=Saira+Semi+Condensed&display=swap');
+    </style>     
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+        	<img src="img/logo/KA Only White.png"> 
+        </div>
+        <div class="sidebar-brand-text mx-3">King Amda Developers</div> 
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="docs">
+          <i class="fas fa-fw fa-code"></i>
+          <span>Home Page</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        API Features
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+          aria-expanded="true" aria-controls="collapseBootstrap">
+          <i class="fas fa-download"></i>
+          <span>Social Media API</span>
+        </a>
+        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Media Features</h6> 
+            <a class="collapse-item" href="/api/download/tiktok?url=https://www.tiktok.com/@manopara_music/video/7063398279236603162?is_from_webapp=1&sender_device=pc&web_id7060741262437893633&apikey=kingamda">Tiktok Download</a>
+            <a class="collapse-item" href="/api/download/tiktok2?url=https://www.tiktok.com/@jadonfonseka/video/7043623250609343770?is_from_webapp=1&sender_device=pc&web_id7067597042009064965&apikey=kingamda">Tiktok Download2</a>
+            <a class="collapse-item" href="/api/download/tiktok3?url=https://www.tiktok.com/@rashmitharox/video/6988099385594744090?is_from_webapp=1&sender_device=pc&web_id7067597042009064965&apikey=kingamda">Tiktok Download3</a>
+            <a class="collapse-item" href="/api/download/ytmp3?url=https://www.youtube.com/watch?v=QQmucsk4K8k&apikey=kingamda">Youtube Mp3 Download</a>
+            <a class="collapse-item" href="/api/download/ytmp4?url=https://www.youtube.com/watch?v=QQmucsk4K8k&apikey=kingamda">Youtube Mp4 Download</a>
+            <a class="collapse-item" href="/api/yt/playmp3?query=DenSepada&&apikey=kingamda">Youtube Play Mp3</a>
+            <a class="collapse-item" href="/api/yt/playmp4?query=DenSepada&&apikey=kingamda">Youtube Play Mp4</a>
+            <a class="collapse-item" href="/api/yt/search?query=DenSepada&apikey=kingamda">Youtube Searching</a>
+            <a class="collapse-item" href="/api/yt/search2?query=DenSepada&apikey=kingamda">Youtube Searching2</a>
+            </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true"
+          aria-controls="collapseIslamic">
+          <i class="fas fa-eye"></i>
+          <span>Stalker Features</span>
+        </a>
+        <div id="collapseIslamic" class="collapse" aria-labelledby="headingIslamic" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Stalker Features</h6>
+            <a class="collapse-item" href="/api/stalk/ig?apikey=APIKEY&username=PasianduSamarasingha">Instagram Stalker</a>
+            <a class="collapse-item" href="/api/stalk/tiktok?apikey=APIKEY&username=chikakiku">Tiktok Stalker</a>
+            <a class="collapse-item" href="/api/stalk/npm?apikey=APIKEY&query=express">Info NPM</a>
+            <a class="collapse-item" href="/api/stalk/github?apikey=APIKEY&username=kingamdabota">Github User Info</a>
+          </div>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWallpaper" aria-expanded="true"
+          aria-controls="collapseKodepos">
+          <i class="fas fa-image"></i>
+          <span>Random API</span>
+        </a>
+        <div id="collapseWallpaper" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Random Image API</h6>
+             <a class="collapse-item" href="/api/maker/dadu?apikey=kingamda">Random DADU</a>
+             <a class="collapse-item" href="/api/wallpaper/technology?apikey=kingamda">Wallpaper Teknology</a>
+            <a class="collapse-item" href="/api/wallpaper/programming?apikey=kingamda">Wallpaper Programming</a>
+            <a class="collapse-item" href="/api/wallpaper/cyberspace?apikey=kingamda">Wallpaper CyberSpace</a>
+            <a class="collapse-item" href="/api/wallpaper/mountains?apikey=kingamda">Wallpaper Mountain View</a>
+             </div>
+            </div>
+            </li>
+<li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker" aria-expanded="true"
+          aria-controls="collapseMaker">
+          <i class="fas fa-fw fa-images"></i>
+          <span>Image Maker API</span>
+        </a>
+        <div id="collapseMaker" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="/api/maker/emoji2png?apikey=APIKEY&text=😂">Emoji To Png</a>
+            <hr>
+            </div>
+            </li>
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePhotooxy" aria-expanded="true"
+          aria-controls="collapsePhotooxy">
+          <i class="fas fa-fw fa-images"></i>
+          <span>Photooxy API</span>
+        </a>
+        <div id="collapsePhotooxy" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Photooxy API</h6>
+            <a class="collapse-item" href="/api/photooxy/shadow?apikey=APIKEY&text=King Amda">Shadow Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/romantic?apikey=APIKEY&text=King Amda">Romantic Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/smoke?apikey=APIKEY&text=King Amda">Smoke text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/burn-paper?apikey=APIKEY&text=King Amda">Burn-paper Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/naruto?apikey=APIKEY&text=King Amda">Naruto Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/romantic?apikey=APIKEY&text=King Amda">Romantic Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/love-message?apikey=APIKEY&text=King Amda">Love-Message Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/message-under-grass?apikey=APIKEY&text=King Amda">Message Under Grass</a>
+            <a class="collapse-item" href="/api/photooxy/glitch?apikey=APIKEY&text=King Amda&text2=Rest APIs">Glitch Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/double-heart?apikey=APIKEY&text=King Amda">Double Heart</a>
+            <a class="collapse-item" href="/api/photooxy/coffe-cup?apikey=APIKEY&text=King Amda">Coffe-cup Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/love-text?apikey=APIKEY&text=King Amda">Love-Text Effect</a>
+            <a class="collapse-item" href="/api/photooxy/butterfly?apikey=APIKEY&text=King Amda">Butterfly Text Effect</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTextpro" aria-expanded="true"
+          aria-controls="collapseTextpro">
+          <i class="fas fa-fw fa-images"></i>
+          <span>Textpro me API</span>
+        </a>
+        <div id="collapseTextpro" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Textpro Me Features</h6>
+            <a class="collapse-item" href="/api/textpro/natural-leaves?apikey=APIKEY&text=King Amda">Natural Leaves Text Images</a>
+            <a class="collapse-item" href="/api/textpro/black-pink?apikey=APIKEY&text=King Amda">Black Pink Text Image</a>
+            <a class="collapse-item" href="/api/textpro/drop-water?apikey=APIKEY&text=King Amda">Drop Water Text Image</a>
+            <a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEY&text=Developers&text2=King Amda">Logo Wolf Text Image</a>
+            <a class="collapse-item" href="/api/textpro/logo-wolf2?apikey=APIKEY&text=Developers&text2=King Amda">Logo Wolf 2 Text Image</a>
+            <a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEY&text=King Amda">Thunder Text Image</a>
+            <a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEY&text=King Amda">Firework Sparkle Text Image</a>
+            <a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEY&text=King Amda">Matrix Text Image</a>
+            <a class="collapse-item" href="/api/textpro/christmas?apikey=APIKEY&text=King Amda">Christmas Text Image</a>
+            <a class="collapse-item" href="/api/textpro/3d-gradient?apikey=APIKEY&text=King Amda">3D Gradient Text Image</a>
+            <a class="collapse-item" href="/api/textpro/porn-hub?apikey=APIKEY&text1=Developers&text2=King Amda">Porn Hub Text Image</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandom"
+          aria-expanded="true" aria-controls="collapseRandom">
+          <i class="fas fa-random"></i>
+          <span>Random API</span>
+        </a>
+        <div id="collapseRandom" class="collapse" aria-labelledby="headingGithub" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Random API</h6>
+            <a class="collapse-item" href="/api/random/meme?apikey=kingamda">Meme</a>
+            <a class="collapse-item" href="/api/random/wallpaper?apikey=kingamda">Wallpaper</a>
+            <a class="collapse-item" href="/api/gimg?query=dog&apikey=kingamda">Google Image</a>
+          </div>
+        </div>
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseItem" aria-expanded="true" aria-controls="collapseForm">
+          <i class="fas fa-wrench"></i>
+           <span>Tools API</span>
+       </a>
+      <div id="collapseItem" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+       <div class="py-2 collapse-inner rounded">
+         <h6 class="collapse-header">Tools Features</h6>
+            <a class="collapse-item" href="/api/short/tinyurl?url=google.com&apikey=kingamda">Shortlink Tinyurl</a>
+            <a class="collapse-item" href="/api/translate?translateto=Sinhala&text=Mahinda's mother's cloth&apikey=kingamda">Translate</a>
+            <a class="collapse-item" href="/api/fakedata?country=usa&apikey=kingamda">Fake Data</a>
+            <a class="collapse-item" href="/api/binlookup?binlookup=55261230003xxxxx&apikey=kingamda">Bin Lookup</a>
+            <a class="collapse-item" href="/api/iplookup?ip=20.64.65.65&apikey=kingamda">Ip Lookup</a>
+            <a class="collapse-item" href="/api/removebg?url=https://forkast.news/wp-content/uploads/2021/05/shiba-inu-in-the-living-room-PZ6T3YY-scaled.jpg&apikey=kingamda">Back Remover</a>
+         <h6 class="collapse-header">Encrypt Tools</h6>
+            <a class="collapse-item" href="/api/base?apikey=APIKEY&type=base64&encode=Fxc7Apis">Base64 Encrypt</a>
+            <a class="collapse-item" href="/api/base?apikey=APIKEY&type=base32&encode=Fxc7Apis">Base32 Encrypt</a>
+         <h6 class="collapse-header">Decrypt Tools</h6>
+            <a class="collapse-item" href="/api/base?apikey=APIKEY&type=base64&decode=Fxc7Apis">Base64 Decrypt</a>
+            <a class="collapse-item" href="/api/base?apikey=APIKEY&type=base32&decode=Fxc7Apis">Base32 Decrypt</a>
+         </div>
+         </div>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true"
+          aria-controls="collapseother">
+          <i class="fab fa-fw fa-wpforms"></i>
+          <span>Information API</span>
+        </a>
+        <div id="collapseInfo" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Information Menu</h6>
+            <a class="collapse-item" href="/api/info/covidinfo?country=LK&apikey=kingamda">Covid Info</a>
+            <a class="collapse-item" href="/api/info/covidworld?apikey=kingamda">Covid World</a>
+          </div>
+        </div>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+<div class="version"><b>Contact me</b></div>
+      </div>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://wa.me/94786238616">
+            <i class="fab fa-fw fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://github.com/kingamdabota">
+            <i class="fab fa-fw fa-github"></i>
+                    <span>Github</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://t.me/PasianduSamarasingha">
+            <i class="fab fa-fw fa-telegram"></i>
+                    <span>Telegram</span>
+            </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="version">Made With❤️By <b>Pasindu Samara$ingha</b></div>
+    </ul>
+    <!-- Sidebar -->
+      <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              
+              </a>
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-1 small" placeholder="Search for..."
+                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li> 
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+              </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="./img/boy.png" style="max-width: 60px">
+                <span class="ml-2 d-none d-lg-inline text-white small">King Amda</span>
+              </a>
+              </div>
+            </li>
+          </ul>
+        <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+       
+<footer class="sticky-footer bg-white">
+  <div class="col-lg-6">
+       <!-- <div class="card mb-4">
+        <div class="card-header py-3">
+         <div class="card-body">
+           <div class="row align-item-center">
+              <img class="shadow mb-4" width="330px" height="300px" src="https://i.ibb.co/wdBM2zH/kingamda.jpg">
+                   </div>
+                  </div> 
+                </div>
+              </div> 
+            </div>
+      <div class="col-lg-6">
+       <div class="card mb-4">   
+        <div class="card-header py-3"> 
+         <div class="card-body">
+          <div class="row align-item-center"> -->
+
+            <div class="mainimg">
+              <img src="./img/main2.jpg" alt="Main Image" style="height: 600px; margin-left: 30rem; margin-top: -4rem;">
+            </div> 
+            <div class="blankfill">
+              <img src="./img/longblank.png" alt="Blank Fill Image" style="margin-left: -0.9rem; margin-top: -73rem;">
+            </div>
+            <div class="kingamda" style="font-size: 4.5rem; font-family: 'Aldrich', sans-serif; margin-top: -35rem; margin-left: 0.0rem;"> 
+              KingAmda </div>
+              <div class="developer" style="font-size: 3.125rem; font-family:'Aldrich', sans-serif;  margin-top: -20px;">
+                Developers.
+              </div>
+            </div>
+            <div class="ourapi"style="font-size: 1.2rem; font-family: 'Cairo', cursive; margin-left:1rem; margin-top: 2rem;">
+              This Rest Api 100% Free Use <br> And You Can Use This Api For Any <br> Your Project.
+            </div>
+
+            <div class="viewers" style="font-size: 2.2rem; font-family: 'Cairo', sans-serif; margin-left: 1rem; margin-top: 5rem;">
+              <p>Visitor Count :</p>
+             </div>
+             <div class="eye">
+               <img src="./img/eye.png" alt="eye" style="height:40px; margin-left: 1rem; margin-top: -0.5rem;">
+             </div>
+             <div class="aaaa" id="visits" style="font-size: 1.7rem; margin-left: 4rem; margin-top: -2.3rem;">00</div>
+              
+             <div class="date" style="font-size: 2.2rem; font-family: 'Cairo', sans-serif; margin-left: 19rem; margin-top:-6.3rem;">
+               Date:
+              </div>
+              <div class="date">
+                <img src="./img/date.png" alt="date" style="height: 38px; margin-left:18.7rem">
+                <span id="datetime" style="font-size: 1.7rem; font-family: 'Cairo', sans-serif; margin-left:0rem; margin-top:1rem;"></span>
+                
+            <script>
+              var dt = new Date();
+              document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+              </script>
+
+              <div class="capikey" style="font-size: 1.7rem; font-family: 'Cairo', sans-serif; margin-top:5rem; margin-left:1rem;">
+                You What To Get Own Api Key Plz Contact Me On Whatsapp...❤️
+              </div>
+    
+              <div class="allcontact">
+              <div class="contactus" style="font-size: 3rem; font-family: 'Cairo', sans-serif; margin-left:40%;margin-top: 5rem;">
+                  Contact Us
+               
+              </div>
+              <div class="whatsapp">
+                <img src="./img/whatsapp.png" alt="whatsapp" style="height: 60px; margin-left:10rem; margin-top:5rem;">
+              </div>
+              <div class="onwhatsapp" style="font-size:2rem; font-family: 'Cairo', sans-serif; margin-left: 5.8rem; margin-top:1.5rem;">
+                On WhatsApp<br>
+               <number style="font-size:1.3rem; margin-left: 1.4rem;"> +94786238616</number><br>
+               <form action="https://wa.me/94786238616">
+                <button type="submit" style="height:40px; border: 3px solid #fff; font-size:2rem; font-family: 'Cairo', sans-serif; font-size: 20px; background-color: #3c065e; margin-left:2.7rem; margin-top:30px"><p style="color: #fff;">Click Here</p></button>
+             </form>
+              </div>
+              <div class="alltelegram" style="margin-left:23rem; margin-top:-20.3rem;">
+              <div class="telegram">
+                <img src="./img/telegram.png" alt="whatsapp" style="height: 60px; margin-left:10rem; margin-top:5rem;">
+              </div>
+              <div class="ontelegram" style="font-size:2rem; font-family: 'Cairo', sans-serif; margin-left: 6rem; margin-top:1.2rem;">
+                On Telegram<br>
+               <tele style="font-size:1.3rem; margin-left: -1.8rem;"> @PasianduSamarasingha</tele><br>
+               <form action="https://t.me/PasianduSamarasingha">
+                <button type="submit" style="height:40px; border: 3px solid #fff; font-size:2rem; font-family: 'Cairo', sans-serif; font-size: 20px; background-color: #3c065e; margin-left:2.7rem; margin-top:30px"><p style="color: #fff;">Click Here</p></button>
+             </form>
+              </div>
+            </div>
+            <div class="allemail" style="margin-left:45rem; margin-top:-20.3rem;">
+              <div class="email">
+                <img src="./img/email.png" alt="whatsapp" style="height: 60px; margin-left:10rem; margin-top:5rem;">
+              </div>
+              <div class="ontelegram" style="font-size:2rem; font-family: 'Cairo', sans-serif; margin-left:9.7rem; margin-top:1.5rem;">
+                Email<br> 
+               <tele style="font-size:1.3rem; margin-left: -5.9rem;"> samarasingha2004@gmail.com</tele><br>
+               <form action="samarasingha2004@gmail.com">
+                <button type="submit" style="height:40px; border: 3px solid #fff; font-size:2rem; font-family: 'Cairo', sans-serif; font-size: 20px; background-color: #3c065e; margin-left:-0.7rem; margin-top:30px; margin-bottom:0rem;"><p style="color: #fff;">Click Here</p></button>
+             </form>
+              </div>
+            </div>
+                        <!-- <div id="demo" class="alert alert-info alert-dismissible" >  -->
+              <div id="Statistic" style="margin-left: -80rem;"></div>
+               <span id="tgl"  style="margin-left: -80rem;"></span>
+                <span id="bln"  style="margin-left: -80rem;"></span> 
+                 <span id="thn"  style="margin-left: -80rem;"></span>
+              </div>
+              </div>
+                 <!-- <div class="square" style="height: 100px; width: 100px;  background-color: #555;"></div> -->
+             
+
+
+           <!-- </div>
+          </div>
+         </div> 
+        </div>
+       </div> -->
+      
+      
+
+            <!-- <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor Count</div>
+                      <br>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="visits">00</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-eye fa-2x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Count Down Idul Fitri</div>
+                      <br>
+                      <div class="h6 mb-0 font-weight-bold text-gray-600 text-uppercase">
+                        <span class="text-danger" id="hari">00</span> Hari 
+                        <span class="text-danger" id="jam">00</span> Jam 
+                        <span class="text-danger" id="menit">00</span> Menit 
+                        <span class="text-danger" id="detik">00</span> Detik
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                     <i class="fas fa-star-and-crescent fa-2x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        <!---Container Fluid-->
+      <!-- Footer -->
+     <!-- <form action="/api/cekapikey">
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col mr-2">
+           <div class="h6 mb-0 font-weight-bold text-dark-800 text-uppercase">
+          <h6 class="text-center">[+] cek apikey [+]</h6>
+          </div>
+           <input type="password" class="form-control" placeholder="Check Your apikey" name="apikey" required=""><br>
+            <button class="btn btn-danger btn-icon-split">
+             <span class="icon text-white-50">
+              <i class="fas fa-check"></i>
+             </span>
+             <span class="text">Check</span>
+            </button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+      </form>
+      <div class="col-lg-6">
+       <div class="card mb-4">
+        <div class="card-header py-3">
+         <div class="card-body">
+             <div class="card m-3 text-center shadow">
+               <p class="card-header shadow-sm bg-primary text-white text-uppercase">About Me</p>
+              <div class="text-center">
+        <img src="https://tinyurl.com/ez4xvzsw" class="rounded-circle shadow mb-3" alt="Fxc7" width="150px" height="150px">
+      </div>
+      <div class="copyright text-center my-auto">
+     <p class="card-text text-shadow">Farhan, 17 tahun<br></p><div class="text-xs font-weight-bold text-uppercase">
+       <h6 class="text-uppercase">Thanks To:</h6><br>
+       Manurios<br>Wawan<br>Rakha<br>Fxc7 Team
+     </div>
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div> -->
+  <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span style="margin-top:5rem">Copyright &copy; 2021 - Developed By
+              <b>Pasindu Samara$ingha.❤️</b>
+            </span>
+          </div>
+        </div>
+      </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <script async src="https://api.countapi.xyz/hit/api-fxc7.herokuapp.com/visits?callback=cb"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/ruang-admin.js"></script>
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>  
+  <audio autoplay="true" src="https://k.top4top.io/m_2261q6srk1.mp3"></audio>
+</body>
+
+</html>
